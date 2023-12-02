@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #fffdd0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+nav {
+    height: 80px;
+    background-color: #fffdd0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+    border-bottom: 3px;
+    border-bottom-style: double;
+}
+
+.logo {
+    color: #242526;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 2rem;
+    text-shadow: 0 2.25px #999;
+    margin-left: -43rem;
+    
+}
+
+.flower {
+margin-left: 30px;
+align-content: center;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: #242526;
+    padding: 0 1.5rem;
+    position: relative;
+}
+
+.nav-items a::after{
+    content: '';
+    height: 1.5px;
+    width: 0;
+    background: #df6d6d;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.75s;
+}
+
+.nav-items a:hover::after{
+    width: 100%;
+}
+
+
+.hero {
+    background: #fffdd0;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #242526;
+    padding: 0rem 2rem;
+}
+
+.column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #fffdd0;
+    background: #242526;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 7px #999;
+}
+
+button:hover {
+    background: #df6d6d;
+    color: #242526;
+    font-weight: bold;
+}
+
+button:active {
+    background: #df6d6d;
+    color: #242526;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+
+.column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.hero-image {
+    width: 90%;
+    height: 90%;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+hr{
+    margin-top: 5rem;
+}
+
+.aboutus{
+    margin-top: 7rem;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.aboutus h2{
+    text-decoration: underline;
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+}
+
+.aboutus p{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 1.5rem;
+}
